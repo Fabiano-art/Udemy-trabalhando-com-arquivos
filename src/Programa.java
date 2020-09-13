@@ -2,6 +2,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
+// lendo arquivos de texto com o Scanner e printando na tela
+
 public class Programa {
 
 	public static void main(String[] args) {

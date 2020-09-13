@@ -1,5 +1,7 @@
 import java.io.File;
 
+//maniupalando as pastas, recuperando listas de arquivos e pastas em um diretório
+
 public class Programa4 {
 
 	public static void main(String[] args) {

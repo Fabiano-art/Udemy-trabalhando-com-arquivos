@@ -2,6 +2,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+//lendo e printando arquivos com o BufferedReader
+
 public class Programa2 {
 
 	public static void main(String[] args) {
