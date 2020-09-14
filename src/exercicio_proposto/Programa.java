@@ -1,28 +1,33 @@
 package exercicio_proposto;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Programa {
 
 	public static void main(String[] args) {
 		
-		File file = new File("C:\\Users\\Guimarães\\Desktop\\Faculdade\\temp\\Source file.csv");
-		Product[] prod = new Product[3];
+		String path;
+		Scanner sc = new Scanner(System.in);
 		
-		try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-			String line = br.readLine();
-			String[] list = line.split(",");
+		System.out.print("Enter the file path: ");
+		path = sc.next();
+		
+		try (BufferedReader br = new BufferedReader(new FileReader(path))){
+			String itens = br.readLine();
+			String[] order;
+			order = itens.split(",");
 			
-			while(line != null) {
-				
+			for(String x : order) {
+				System.out.println(x);
 			}
 		}
 		catch(IOException e) {
-			e.printStackTrace();
+			System.out.println("Error: "+e.getMessage());
 		}
+		
 	}
 
 }
